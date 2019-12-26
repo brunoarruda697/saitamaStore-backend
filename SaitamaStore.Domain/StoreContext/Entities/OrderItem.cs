@@ -18,6 +18,7 @@ namespace SaitamaStore.Domain.StoreContext.Entities
             {
                 AddNotification("Quantity", "Produto fora de estoque");
             }
+            product.DecreaseQuantity(quantity);
         }
         
         public Product Product { get; private set; }
